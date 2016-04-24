@@ -1,0 +1,105 @@
+@import "components";
+.index-w  .navbar{
+    margin-bottom: 0;
+}
+.section-body {
+    .wh100p();
+    //background: url("../images/s1.jpg") no-repeat center;
+    background-size: cover;
+}
+.logo-text {
+    @w: 930px;
+    @h: 142px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -@w/2;
+    margin-top: -@h;
+    font-size: 100px;
+    font-family: cursive;
+    text-align: center;
+    text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.2);
+}
+.loginBtn {
+    position: absolute;
+    top: 8px;
+    right: 74px;
+}
+.registBtn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.loginPanel,
+.registPanel {
+    @t: 50%;
+    @l: 50%;
+    position: fixed;
+    top: @t;
+    left: @l;
+    padding: 25px;
+    transform: translate(-@l,-@t);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+.form-w h3 {
+    margin-top: 10px;
+    margin-bottom:  0;
+}
+.closeBtn {
+    display: block;
+    width:26px;
+    height:26px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid #bababa;
+    border-radius: 50%;
+    color:#bababa;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.closeBtn:hover {
+    color: red;
+    border-color: red;
+}
+.error-mess {
+    padding: 10px 0;
+    color: red;
+}
+.login-checkbox {
+    color: #8c8c8c;
+}
+.captcha-w {
+    position: relative;
+}
+.captcha-input {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+.captcha-img {
+    height:34px;
+    border: 1px solid #ccc;
+}
+.changed-btn {
+    display: block;
+    text-align: right;
+    background: url("../images/refresh.png") no-repeat 82%50%;
+    background-size: 12px;
+}
+.captcha-loading {
+    position: absolute;
+    width: 109px;
+    height: 36px;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: rgba(255,255,255,.7);
+}
